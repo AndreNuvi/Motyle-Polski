@@ -12,7 +12,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:id="@+id/imageView"
-        android:src="@drawable/dostojka_eunomia_small"/>
+        android:src="@drawable/zorzynek_rzezuchowiec" />
 
     <TextView
         android:layout_width="wrap_content"

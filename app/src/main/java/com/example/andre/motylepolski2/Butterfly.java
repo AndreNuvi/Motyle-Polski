@@ -7,6 +7,31 @@ public class Butterfly {
     private int imageButterflyId;
     private String name;
     private String latinName;
+    String colorTag1;
+    String colorTag2;
+    private int imageGalleryOne;
+    private int imageGalleryTwo;
+    private int imageGalleryThree;
+
+
+
+    public String getColorTag2() {
+        return colorTag2;
+    }
+
+    public void setColorTag2(String colorTag2) {
+        this.colorTag2 = colorTag2;
+    }
+
+    public String getColorTag1() {
+        return colorTag1;
+    }
+
+    public void setColorTag1(String colorTag1) {
+        this.colorTag1 = colorTag1;
+    }
+
+
 
     public String getLatinName() {
         return latinName;
@@ -36,5 +61,25 @@ public class Butterfly {
         this.imageButterflyId = imageButterflyId;
         this.name = name;
         this.latinName = latinName;
+    }
+
+
+    public Butterfly(int imageButterflyId, String name, String latinName, String colorTag1, String colorTag2) {
+        this.imageButterflyId = imageButterflyId;
+        this.name = name;
+        this.latinName = latinName;
+        this.colorTag1 = colorTag1;
+        this.colorTag2 = colorTag2;
+    }
+
+    public Butterfly(int imageButterflyId, String name, String latinName, String colorTag1, String colorTag2, int imageGalleryOne, int imageGalleryTwo, int imageGalleryThree) {
+        this.imageButterflyId = imageButterflyId;
+        this.name = name;
+        this.latinName = latinName;
+        this.colorTag1 = colorTag1;
+        this.colorTag2 = colorTag2;
+        this.imageGalleryOne = imageGalleryOne;
+        this.imageGalleryTwo = imageGalleryTwo;
+        this.imageGalleryThree = imageGalleryThree;
     }
 }
