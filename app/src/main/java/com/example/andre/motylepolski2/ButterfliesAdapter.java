@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by Andre on 2016-05-04.
@@ -18,12 +19,15 @@ import java.util.List;
 public class ButterfliesAdapter extends ArrayAdapter<Butterfly> {
 
     private Context context;
-    private List<Butterfly> data;
+    static  List<Butterfly> data;
+    static  ArrayList<Butterfly> arrayList;
 
     public ButterfliesAdapter(Context context, ArrayList<Butterfly> data) {
         super(context, R.layout.layout_list_row);
         this.data = data;
         this.context = context;
+        arrayList = new ArrayList<>();
+        arrayList.addAll(data);
     }
 
     @Override
@@ -43,7 +47,7 @@ public class ButterfliesAdapter extends ArrayAdapter<Butterfly> {
             holder.name = (TextView) row.findViewById(R.id.name);
             holder.latinName = (TextView) row.findViewById(R.id.latinName);
             row.setTag(holder);
-        }else{
+        } else {
             holder = (ButterflyHolder) row.getTag();
         }
 
@@ -59,5 +63,23 @@ public class ButterfliesAdapter extends ArrayAdapter<Butterfly> {
         ImageView butterfly;
         TextView name;
         TextView latinName;
+    }
+
+    public void filter(String charText) {
+        charText = charText.toLowerCase(Locale.getDefault());
+        data.clear();
+        if (charText.length() == 0) {
+            data.addAll(arrayList);
+        } else {
+            for (Butterfly butterflyDetails : arrayList) {
+                if (charText.length() != 0 && butterflyDetails.getName().toLowerCase(Locale.getDefault()).contains(charText)) {
+                    data.add(butterflyDetails);
+                } else if (charText.length() != 0 && butterflyDetails.getName().toLowerCase(Locale.getDefault()).contains(charText)) {
+                    data.add(butterflyDetails);
+                }
+            }
+        }
+        notifyDataSetChanged();
+
     }
 }

@@ -14,7 +14,6 @@ public class Butterfly {
     private int imageGalleryThree;
 
 
-
     public String getColorTag2() {
         return colorTag2;
     }
@@ -30,7 +29,6 @@ public class Butterfly {
     public void setColorTag1(String colorTag1) {
         this.colorTag1 = colorTag1;
     }
-
 
 
     public String getLatinName() {
@@ -81,5 +79,10 @@ public class Butterfly {
         this.imageGalleryOne = imageGalleryOne;
         this.imageGalleryTwo = imageGalleryTwo;
         this.imageGalleryThree = imageGalleryThree;
+    }
+
+    @Override
+    public String toString() {
+        return getName() + "";
     }
 }

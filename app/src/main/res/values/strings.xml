@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Motyle Polski</string>
     <string name="title_activity_butterfly_details">ButterflyDetails</string>
+    <string name="find">Szukaj</string>
 </resources>
