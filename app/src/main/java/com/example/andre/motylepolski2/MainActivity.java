@@ -30,22 +30,22 @@ public class MainActivity extends AppCompatActivity  {
         listView = (ListView) findViewById(R.id.listView);
 
         data = new ArrayList<Butterfly>();
-        data.add(new Butterfly(R.drawable.bielinek_rukiewnik_icon, "Bielinek Rukiewnik", "Pontia edusa"));
-        data.add(new Butterfly(R.drawable.bielinek_rzepnik_icon, "Bielinek Rzepnik", "Pieris rapae"));
-        data.add(new Butterfly(R.drawable.czerwonczyk_nieparek_icon, "Czerwończyk Nieparek", "Lycaena dispar"));
-        data.add(new Butterfly(R.drawable.dostojka_selene_icon, "Dostojka Selene", "Boloria selene"));
-        data.add(new Butterfly(R.drawable.latolistek_cytrynek_icon, "Latolistek Cytrynek", "Gonepteryx rhamni"));
-        data.add(new Butterfly(R.drawable.mieniak_struznik_icon, "Mieniak Strużnik", "Apatura ilia"));
-        data.add(new Butterfly(R.drawable.modraszek_zwieszczek_icon, "Modraszek Wieszczek", "Celastrina argiolus"));
-        data.add(new Butterfly(R.drawable.paz_krolowej_icon, "Paź Królowej", "Papilio machaon"));
-        data.add(new Butterfly(R.drawable.paz_zeglarz, "Paź Żeglarz", "Iphiclides podalirius "));
-        data.add(new Butterfly(R.drawable.rusalka_admiral_icon, "Rusałka Admirał", "Vanessa atalanta"));
-        data.add(new Butterfly(R.drawable.rusalka_osetnik_icon, "Rusałka Osetnik", "Vanessa cardui "));
-        data.add(new Butterfly(R.drawable.rusalka_pawik_icon, "Rusałka Pawik", "Aglais io "));
-        data.add(new Butterfly(R.drawable.rusalka_pokrzywnik_icon, "Rusałka Pokrzywnik", "Aglais urticae "));
-        data.add(new Butterfly(R.drawable.rusalka_zalobnik_icon, "Rusałka Żałobnik", "Nymphalis antiopa"));
-        data.add(new Butterfly(R.drawable.skalnik_driada_icon, "Skalnik Driada", "Minois dryas"));
-        data.add(new Butterfly(R.drawable.zorzynek_rzezuchowiec, "Zorzynek Rzeżuchowiec", "Anthocharis cardamines"));
+        data.add(new Butterfly(R.drawable.bielinek_rukiewnik_icon, "Bielinek Rukiewnik", "Pontia edusa","biały"));
+        data.add(new Butterfly(R.drawable.bielinek_rzepnik_icon, "Bielinek Rzepnik", "Pieris rapae","biały" ));
+        data.add(new Butterfly(R.drawable.czerwonczyk_nieparek_icon, "Czerwończyk Nieparek", "Lycaena dispar","pomarańczowy"));
+        data.add(new Butterfly(R.drawable.dostojka_selene_icon, "Dostojka Selene", "Boloria selene", "pomarańczowy"));
+        data.add(new Butterfly(R.drawable.latolistek_cytrynek_icon, "Latolistek Cytrynek", "Gonepteryx rhamni","żółty"));
+        data.add(new Butterfly(R.drawable.mieniak_struznik_icon, "Mieniak Strużnik", "Apatura ilia","czarny"));
+        data.add(new Butterfly(R.drawable.modraszek_zwieszczek_icon, "Modraszek Wieszczek", "Celastrina argiolus", "niebieski"));
+        data.add(new Butterfly(R.drawable.paz_krolowej_icon, "Paź Królowej", "Papilio machaon", "żółty"));
+        data.add(new Butterfly(R.drawable.paz_zeglarz, "Paź Żeglarz", "Iphiclides podalirius ","żółty"));
+        data.add(new Butterfly(R.drawable.rusalka_admiral_icon, "Rusałka Admirał", "Vanessa atalanta", "czarny"));
+        data.add(new Butterfly(R.drawable.rusalka_osetnik_icon, "Rusałka Osetnik", "Vanessa cardui ","pomarańczowy"));
+        data.add(new Butterfly(R.drawable.rusalka_pawik_icon, "Rusałka Pawik", "Aglais io", "czerwony"));
+        data.add(new Butterfly(R.drawable.rusalka_pokrzywnik_icon, "Rusałka Pokrzywnik", "Aglais urticae", "pomarańczowy"));
+        data.add(new Butterfly(R.drawable.rusalka_zalobnik_icon, "Rusałka Żałobnik", "Nymphalis antiopa","czarny"));
+        data.add(new Butterfly(R.drawable.skalnik_driada_icon, "Skalnik Driada", "Minois dryas", "brązowy"));
+        data.add(new Butterfly(R.drawable.zorzynek_rzezuchowiec, "Zorzynek Rzeżuchowiec", "Anthocharis cardamines", "biały"));
 
 
         adapter = new ButterfliesAdapter(this, data);
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity  {
                 i.putExtra("latin", data.get(position).getLatinName());
                 i.putExtra("image", data.get(position).getImageButterflyId());
                 startActivity(i);
-                //Toast.makeText(getApplicationContext(), "" + (data.get(position).getLatinName()), Toast.LENGTH_SHORT).show();
+
 
             }
         });
@@ -100,11 +100,6 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
-
-
-
-//        SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
-//        searchView.setOnQueryTextListener(this);
         return true;
     }
 
@@ -124,18 +119,5 @@ public class MainActivity extends AppCompatActivity  {
         return super.onOptionsItemSelected(item);
     }
 
-//    @Override
-//    public boolean onQueryTextSubmit(String query) {
-//        return false;
-//    }
-//
-//    @Override
-//    public boolean onQueryTextChange(String newText) {
-//        if (newText.isEmpty()) {
-//            listView.clearTextFilter();
-//        } else {
-//            listView.setFilterText(newText);
-//        }
-//        return false;
-//    }
+
 }

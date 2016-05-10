@@ -8,19 +8,13 @@ public class Butterfly {
     private String name;
     private String latinName;
     String colorTag1;
-    String colorTag2;
+
     private int imageGalleryOne;
     private int imageGalleryTwo;
     private int imageGalleryThree;
 
 
-    public String getColorTag2() {
-        return colorTag2;
-    }
 
-    public void setColorTag2(String colorTag2) {
-        this.colorTag2 = colorTag2;
-    }
 
     public String getColorTag1() {
         return colorTag1;
@@ -62,20 +56,20 @@ public class Butterfly {
     }
 
 
-    public Butterfly(int imageButterflyId, String name, String latinName, String colorTag1, String colorTag2) {
+    public Butterfly(int imageButterflyId, String name, String latinName, String colorTag1) {
         this.imageButterflyId = imageButterflyId;
         this.name = name;
         this.latinName = latinName;
         this.colorTag1 = colorTag1;
-        this.colorTag2 = colorTag2;
+
     }
 
-    public Butterfly(int imageButterflyId, String name, String latinName, String colorTag1, String colorTag2, int imageGalleryOne, int imageGalleryTwo, int imageGalleryThree) {
+    public Butterfly(int imageButterflyId, String name, String latinName, String colorTag1, int imageGalleryOne, int imageGalleryTwo, int imageGalleryThree) {
         this.imageButterflyId = imageButterflyId;
         this.name = name;
         this.latinName = latinName;
         this.colorTag1 = colorTag1;
-        this.colorTag2 = colorTag2;
+
         this.imageGalleryOne = imageGalleryOne;
         this.imageGalleryTwo = imageGalleryTwo;
         this.imageGalleryThree = imageGalleryThree;
