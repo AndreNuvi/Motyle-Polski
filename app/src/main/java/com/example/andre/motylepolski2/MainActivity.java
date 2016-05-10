@@ -1,6 +1,7 @@
 package com.example.andre.motylepolski2;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -78,6 +79,8 @@ public class MainActivity extends AppCompatActivity  {
 
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.setQueryHint("Wpisz nazwę lub kolor dominujący");
+        //searchView.setBackgroundColor(Color.WHITE);
         //*** setOnQueryTextFocusChangeListener ***
         searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
