@@ -22,19 +22,18 @@ public class ButterflyDetail extends AppCompatActivity {
         setContentView(R.layout.activity_butterfly_detail);
 
         TextView text = (TextView) findViewById(R.id.motylekTextView);
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.mainLinearLayout);
         ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
 
         Intent in = this.getIntent();
         
         String name = in.getStringExtra("name");
-        final int imageIconIntent = in.getExtras().getInt("image");
-        final int imageFullIntent = in.getExtras().getInt("full");
-        final int imageGasienicaIntent = in.getExtras().getInt("gasienica");
-        final int imageKokonIntent = in.getExtras().getInt("poczwarka");
-
-
-
+        final int imageImago1 = in.getExtras().getInt("imageImago1");
+        final int imageImago2 = in.getExtras().getInt("imageImago2");
+        final int imageImago3 = in.getExtras().getInt("imageImago3");
+        final int imageCaterpillar = in.getExtras().getInt("imageCaterpillar");
+        final int imageCocoon = in.getExtras().getInt("imageCocoon");
+        final int imageEgg = in.getExtras().getInt("imageEgg");
+        final int imageArea = in.getExtras().getInt("imageArea");
 
         text.setText(name);
 
@@ -42,10 +41,13 @@ public class ButterflyDetail extends AppCompatActivity {
         class ImageAdapter extends PagerAdapter {
             Context context;
             private int[] GalImages = new int[]{
-                    imageFullIntent,
-                    imageGasienicaIntent,
-                    imageKokonIntent,
-
+                    imageImago1,
+                    imageImago2,
+                    imageImago3,
+                    imageCaterpillar,
+                    imageCocoon,
+                    imageEgg,
+                    imageArea
 
             } ;
 

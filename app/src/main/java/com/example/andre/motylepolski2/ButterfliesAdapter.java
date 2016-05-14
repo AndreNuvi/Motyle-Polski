@@ -52,7 +52,7 @@ public class ButterfliesAdapter extends ArrayAdapter<Butterfly> {
         }
 
         Butterfly butterfly = data.get(position);
-        holder.butterfly.setImageResource(butterfly.getImageButterflyId());
+        holder.butterfly.setImageResource(butterfly.getButterflyIcon());
         holder.name.setText(butterfly.getName());
         holder.latinName.setText(butterfly.getLatinName());
 
