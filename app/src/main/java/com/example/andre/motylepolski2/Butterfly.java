@@ -13,8 +13,29 @@ public class Butterfly {
     private int imageGalleryTwo;
     private int imageGalleryThree;
 
+    public int getImageGalleryOne() {
+        return imageGalleryOne;
+    }
 
+    public void setImageGalleryOne(int imageGalleryOne) {
+        this.imageGalleryOne = imageGalleryOne;
+    }
 
+    public int getImageGalleryTwo() {
+        return imageGalleryTwo;
+    }
+
+    public void setImageGalleryTwo(int imageGalleryTwo) {
+        this.imageGalleryTwo = imageGalleryTwo;
+    }
+
+    public int getImageGalleryThree() {
+        return imageGalleryThree;
+    }
+
+    public void setImageGalleryThree(int imageGalleryThree) {
+        this.imageGalleryThree = imageGalleryThree;
+    }
 
     public String getColorTag1() {
         return colorTag1;

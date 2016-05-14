@@ -74,7 +74,8 @@ public class ButterfliesAdapter extends ArrayAdapter<Butterfly> {
             for (Butterfly butterflyDetails : arrayList) {
                 if (charText.length() != 0 && butterflyDetails.getName().toLowerCase(Locale.getDefault()).contains(charText)) {
                     data.add(butterflyDetails);
-                } else if (charText.length() != 0 && butterflyDetails.getColorTag1().toLowerCase(Locale.getDefault()).contains(charText)) {
+            } else
+            if (charText.length() != 0 && butterflyDetails.getColorTag1().toLowerCase(Locale.getDefault()).contains(charText)) {
                     data.add(butterflyDetails);
                 }
             }

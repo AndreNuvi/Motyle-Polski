@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity  {
         listView = (ListView) findViewById(R.id.listView);
 
         data = new ArrayList<Butterfly>();
-        data.add(new Butterfly(R.drawable.bielinek_rukiewnik_icon, "Bielinek Rukiewnik", "Pontia edusa","biały"));
+        data.add(new Butterfly(R.drawable.bielinek_rukiewnik_icon, "Bielinek Rukiewnik", "Pontia edusa","biały",
+                R.drawable.bielinek_rukiewnik_full, R.drawable.bielinek_rukiewnik_gasiennica,R.drawable.bielinek_rukiewnik_poczwarka));
         data.add(new Butterfly(R.drawable.bielinek_rzepnik_icon, "Bielinek Rzepnik", "Pieris rapae","biały" ));
         data.add(new Butterfly(R.drawable.czerwonczyk_nieparek_icon, "Czerwończyk Nieparek", "Lycaena dispar","pomarańczowy"));
         data.add(new Butterfly(R.drawable.dostojka_selene_icon, "Dostojka Selene", "Boloria selene", "pomarańczowy"));
@@ -56,12 +57,16 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent i = new Intent(MainActivity.this, ButterflyDetail.class);
+                final Intent i = new Intent(MainActivity.this, ButterflyDetail.class);
 
                 i.putExtra("name", data.get(position).getName());
                 i.putExtra("latin", data.get(position).getLatinName());
                 i.putExtra("image", data.get(position).getImageButterflyId());
+                i.putExtra("full", data.get(position).getImageGalleryOne());
+                i.putExtra("gasienica", data.get(position).getImageGalleryTwo());
+                i.putExtra("poczwarka", data.get(position).getImageGalleryThree());
                 startActivity(i);
+
 
 
             }
@@ -80,7 +85,7 @@ public class MainActivity extends AppCompatActivity  {
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         searchView.setQueryHint("Wpisz nazwę lub kolor dominujący");
-        //searchView.setBackgroundColor(Color.WHITE);
+
         //*** setOnQueryTextFocusChangeListener ***
         searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
