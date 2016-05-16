@@ -2,14 +2,18 @@ package com.example.andre.motylepolski2;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
@@ -21,11 +25,19 @@ public class ButterflyDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_butterfly_detail);
 
-        TextView text = (TextView) findViewById(R.id.motylekTextView);
+
         ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
+        WebView webView =(WebView) findViewById(R.id.webview) ;
+        webView.getSettings();
+
+
+
+        webView.setBackgroundColor(Color.TRANSPARENT);
+        TextView textView =(TextView)findViewById(R.id.nameTextView);
+
 
         Intent in = this.getIntent();
-        
+
         String name = in.getStringExtra("name");
         final int imageImago1 = in.getExtras().getInt("imageImago1");
         final int imageImago2 = in.getExtras().getInt("imageImago2");
@@ -34,8 +46,11 @@ public class ButterflyDetail extends AppCompatActivity {
         final int imageCocoon = in.getExtras().getInt("imageCocoon");
         final int imageEgg = in.getExtras().getInt("imageEgg");
         final int imageArea = in.getExtras().getInt("imageArea");
+        String detailInfo = in.getStringExtra("detailInfo");
 
-        text.setText(name);
+        webView.loadDataWithBaseURL(null,detailInfo,"text/html","UTF-8", null);
+
+        textView.setText(name);
 
 
         class ImageAdapter extends PagerAdapter {
@@ -49,24 +64,24 @@ public class ButterflyDetail extends AppCompatActivity {
                     imageEgg,
                     imageArea
 
-            } ;
+            };
 
             ImageAdapter(Context context) {
                 this.context = context;
             }
 
             @Override
-            public int getCount () {
+            public int getCount() {
                 return GalImages.length;
             }
 
             @Override
-            public boolean isViewFromObject (View view, Object object){
+            public boolean isViewFromObject(View view, Object object) {
                 return view == ((ImageView) object);
             }
 
             @Override
-            public Object instantiateItem (ViewGroup container, int position){
+            public Object instantiateItem(ViewGroup container, int position) {
                 ImageView imageView = new ImageView(context);
                 int padding = context.getResources().getDimensionPixelSize(R.dimen.gallery_margin);
                 imageView.setPadding(0, 0, 0, 0);
@@ -77,7 +92,7 @@ public class ButterflyDetail extends AppCompatActivity {
             }
 
             @Override
-            public void destroyItem (ViewGroup container,int position, Object object){
+            public void destroyItem(ViewGroup container, int position, Object object) {
                 ((ViewPager) container).removeView((ImageView) object);
             }
 
@@ -88,9 +103,6 @@ public class ButterflyDetail extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
     }
-
-
-
 
 
 }

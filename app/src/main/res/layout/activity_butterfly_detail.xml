@@ -4,43 +4,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.andre.motylepolski2.ButterflyDetail">
+    tools:context="com.example.andre.motylepolski2.ButterflyDetail"
+    android:clipToPadding="false">
+
 
     <LinearLayout
         android:id="@+id/mainLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:baselineAligned="false"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        android:outlineProvider="bounds"
+        android:elevation="4dp"
+        >
 
         <android.support.v4.view.ViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-
+            android:layout_height="match_parent"
+            />
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:fillViewport="true"
+        >
 
-        <TextView
-            android:id="@+id/motylekTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:gravity="center_horizontal"
-            android:text="Przykład"
-            android:textSize="30sp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
 
-            />
+            >
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Motylek Sratylek"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/colorText"
 
-    </LinearLayout>
+                />
 
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                >
+            </WebView>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

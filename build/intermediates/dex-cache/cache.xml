@@ -12,7 +12,7 @@
         jar="G:\Dropbox\MotylePolski2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="54e133a493a77b4052c6ccaf6b930a52fa8d4417">
+        sha1="f2efd80879f53ada3528ad41a0c15ab27f754444">
         <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3ef679fc4f867d0278932751f40280f4ee1edb8b\classes.dex" />
     </item>
     <item
@@ -40,7 +40,7 @@
         jar="G:\Dropbox\MotylePolski2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="6f541bf73f7c31de086fa3bd2d79eeb964b46bb2">
+        sha1="7a8d43007de99dc6e28abf2e04d006714aca3add">
         <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d7cecb5a264bf5303478a70908fa00ca7897289d\classes.dex" />
     </item>
     <item
