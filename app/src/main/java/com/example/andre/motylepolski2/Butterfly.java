@@ -15,10 +15,8 @@ public class Butterfly {
     int butterflyCocoon;
     int butterflyEgg;
     int butterflyArea;
-    String nutrition;
     String detailInfo;
-    String link1;
-    String link2;
+
 
     public String getName() {
         return name;
