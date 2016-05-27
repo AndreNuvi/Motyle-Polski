@@ -1,4 +1,4 @@
-package com.example.andre.motylepolski2;
+package com.anuvi.andre.motylepolski;
 
 /**
  * Created by Andre on 2016-05-04.

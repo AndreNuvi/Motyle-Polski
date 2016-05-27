@@ -1,4 +1,4 @@
-package com.example.andre.motylepolski2;
+package com.anuvi.andre.motylepolski;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

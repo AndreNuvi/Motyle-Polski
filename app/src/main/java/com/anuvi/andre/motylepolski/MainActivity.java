@@ -1,4 +1,4 @@
-package com.example.andre.motylepolski2;
+package com.anuvi.andre.motylepolski;
 
 
 import android.content.Intent;
@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
                         "<h4><a href=\"http://www.lepidoptera.eu/show.php?ID=99&country=PL\">Źródło zdjęć: www.lepidoptera.eu</a></h4>"));
 
         data.add(new Butterfly("Rusałka Pawik", "Aglais io", "czerwony", R.drawable.rusalka_pawik_icon, R.drawable.rusalka_pawik_imago1, R.drawable.rusalka_pawik_imago2,
-                R.drawable.rusalka_pawik_imago3, R.drawable.rusalka_pawik_caterpillar, R.drawable.rusalka_pawik_caterpillar, R.drawable.rusalka_pawik_egg,
+                R.drawable.rusalka_pawik_imago3, R.drawable.rusalka_pawik_caterpillar, R.drawable.rusalka_pawik_cocoon, R.drawable.rusalka_pawik_egg,
                 R.drawable.rusalka_pawik_area,
                 style +
 

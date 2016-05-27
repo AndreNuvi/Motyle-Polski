@@ -1,4 +1,4 @@
-package com.example.andre.motylepolski2;
+package com.anuvi.andre.motylepolski;
 
 import org.junit.Test;
 

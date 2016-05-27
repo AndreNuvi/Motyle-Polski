@@ -9,39 +9,11 @@
         <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_5dfdbdae08e7cccd26b57c5e5499621c667de414\classes.dex" />
     </item>
     <item
-        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="4930def4370f8f9f9aab86964f092c25f7c9aaf9">
-        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3ef679fc4f867d0278932751f40280f4ee1edb8b\classes.dex" />
-    </item>
-    <item
-        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_a2284456cd27119db86e0163708b58f9740dfc68\classes.dex" />
-    </item>
-    <item
         jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
         <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_297d1438501e569a477ebeb8b0fcd6450381248f\classes.dex" />
-    </item>
-    <item
-        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_bcc534e69cce100f137c41cf289589a680ef4faa\classes.dex" />
-    </item>
-    <item
-        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="03441df8720321a52110787f502208107282adcc">
-        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d7cecb5a264bf5303478a70908fa00ca7897289d\classes.dex" />
     </item>
     <item
         jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
@@ -56,13 +28,6 @@
         revision="23.0.2"
         sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
         <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_a761237242ebbfb7bd8e4d1bf4430d04d7aeddba\classes.dex" />
-    </item>
-    <item
-        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_2128591285057d7c2ce3da0fbd7a9d979a7f3675\classes.dex" />
     </item>
     <item
         jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
@@ -84,6 +49,41 @@
         revision="23.0.2"
         sha1="debf30ce0a7560396b6235edef77e447006454c2">
         <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_245a3a9af438373c973e9856dd21d2d988a44977\classes.dex" />
+    </item>
+    <item
+        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e7495c8cf2ac1ebaa7dc0d2503a94817c6bd0399">
+        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3ef679fc4f867d0278932751f40280f4ee1edb8b\classes.dex" />
+    </item>
+    <item
+        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_a2284456cd27119db86e0163708b58f9740dfc68\classes.dex" />
+    </item>
+    <item
+        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_bcc534e69cce100f137c41cf289589a680ef4faa\classes.dex" />
+    </item>
+    <item
+        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="65adbd5c3b7d71fd25330eb26d3106d411e7ea6b">
+        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d7cecb5a264bf5303478a70908fa00ca7897289d\classes.dex" />
+    </item>
+    <item
+        jar="G:\Dropbox\MotylePolski2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="G:\Dropbox\MotylePolski2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_2128591285057d7c2ce3da0fbd7a9d979a7f3675\classes.dex" />
     </item>
 
 </items>

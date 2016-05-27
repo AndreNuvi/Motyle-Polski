@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.andre.motylepolski2.ButterflyDetail"
+    tools:context="com.anuvi.andre.motylepolski.ButterflyDetail"
     android:clipToPadding="false">
 
 
